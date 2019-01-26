@@ -1,4 +1,12 @@
 '''
+@Author: Captain Darkshade
+Twitter: @cdarkshade
+YouTube: Captain Darkshade
+
+Disclaimer: I am not a security professional nor do I consider myself as an expert. 
+I am nothing more than a security enthusiast and a beginner at best. Scanning and 
+attacking networks and computers without express permission is illegal in many countries. 
+Code samples are provided as is and without warranty. All demos conducted in my own isolated lab
 
 PLAN of ATTACK:
 Desired Stack	                  Address	    Description
