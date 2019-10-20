@@ -6,10 +6,7 @@ i = 0
 decoded = ""
 for ch in code:
     if needOffset:
-        if ord(ch) < ord("S"):
-            offset = abs(ord("S") - ord(ch))
-        else:
-            offset = ord("Z") - ord(ch) + ord("S") - ord("A") + 1
+        offset = abs(ord("S") - ord(ch))
         print("offset: " + str(offset))
         needOffset = False
     print("ord of char: " + str(ord(ch)))
